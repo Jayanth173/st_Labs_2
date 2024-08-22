@@ -1,0 +1,94 @@
+/* Container for centering the content */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f7fafc; /* Tailwind's bg-gray-100 */
+  }
+  
+  /* Inner container for horizontal padding */
+  .inner-container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.5rem; /* Increased for better spacing */
+    padding-right: 2.5rem; /* Increased for better spacing */
+  }
+  
+  /* Main content box styling */
+  .content-box {
+    background-color: #ffffff; /* Tailwind's bg-white */
+    border-radius: 0.75rem; /* Slightly larger radius for a more modern look */
+    border: 1px solid #e2e8f0; /* Tailwind's border-gray-200 */
+    padding: 2rem; /* Increased padding for better content separation */
+    width: 500px; /* Responsive width */
+    max-width: 800px; /* Fixed max-width for larger screens */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06); /* Tailwind's shadow-lg */
+    margin-top: 2rem; /* Margin to avoid sticking to top edge */
+  }
+  
+  /* Styling for the list within the content box */
+  .content-list {
+    border-top: 1px solid #e2e8f0; /* Tailwind's divide-gray-200 */
+    border-bottom: 1px solid #e2e8f0;
+    font-size: 0.9rem; /* Slightly larger font size for better readability */
+    line-height: 1.6; /* Increased line-height for improved readability */
+  }
+  
+  /* Individual content item styling */
+  .content-item {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.3rem; /* Increased gap for more spacing */
+    padding: 1.2rem; /* Slightly larger padding */
+    border-radius: 0.5rem; /* Rounded corners for items */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+  }
+  
+  /* Responsive grid columns for larger screens */
+  @media (min-width: 640px) {
+    .content-item {
+      grid-template-columns: 1fr 2fr; /* Tailwind's sm:grid-cols-3 */
+      gap: 1.75rem; /* Tailwind's sm:gap-6 */
+    }
+  }
+  
+  /* Alternating background colors for items */
+  .even-item {
+    background-color: #f3f4f6; /* Slightly different color for better distinction */
+  }
+  
+  .odd-item {
+    background-color: #ffffff; /* Tailwind's bg-white */
+  }
+  
+  /* Hover effects for content items */
+  .content-item:hover {
+    background-color: #f1f5f9; /* Slightly lighter hover color */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.05); /* Enhanced shadow on hover */
+  }
+  
+  /* Label styling */
+  .content-label {
+    font-weight: 600; /* Tailwind's font-semibold */
+    color: #2d3748; /* Tailwind's text-gray-800 */
+    margin-bottom: 0.5rem; /* Space between label and value */
+    font-size: 1rem; /* Slightly larger font size for emphasis */
+  }
+  
+  /* Value styling */
+  .content-value {
+    color: #4a5568; /* Tailwind's text-gray-600 */
+    font-size: 0.95rem; /* Slightly smaller font size for values */
+  }
+  
+  /* Existing styles */
+
+.section-title {
+    font-size: 1.5rem; /* Larger font size for the title */
+    font-weight: 700; /* Bold font weight */
+    color: #2d3748; /* Tailwind's text-gray-800 */
+    margin-bottom: 1.5rem; /* Space below the title */
+    text-align: center; /* Center the title */
+  }
+  

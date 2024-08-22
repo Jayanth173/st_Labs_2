@@ -1,0 +1,80 @@
+/* Container for the component */
+.container {
+    margin: 0 auto; /* equivalent to max-w-screen-xl */
+    padding-left: 1rem; /* equivalent to px-4 */
+    padding-right: 1rem; /* equivalent to px-4 */
+  background-color: aquamarine;
+  }
+  
+  @media (min-width: 640px) {
+    .container {
+      padding-left: 1.5rem; /* equivalent to sm:px-6 */
+      padding-right: 1.5rem; /* equivalent to sm:px-6 */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .container {
+      padding-left: 2rem; /* equivalent to lg:px-8 */
+      padding-right: 2rem; /* equivalent to lg:px-8 */
+    }
+  }
+  
+  /* Flex and grid container for layout */
+  .flex-grid-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem; /* equivalent to mt-6 */
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+   margin-left: 30%; /* equivalent to gap-4 */
+  }
+  
+  @media (min-width: 640px) {
+    .flex-grid-container {
+      margin-top: 2rem; /* equivalent to sm:mt-8 */
+      flex-direction: row;
+      flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* equivalent to sm:grid-cols-2 */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .flex-grid-container {
+      grid-template-columns: repeat(2, 1fr); /* equivalent to lg:grid-cols-2 */
+    }
+  }
+  
+  /* Card styling */
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 0.5rem; /* equivalent to rounded-lg */
+    background-color: rgb(239, 248, 248);  /* equivalent to px-4 py-8 */
+    text-align: center;
+    width: 20%;
+  }
+  
+  /* Text styling */
+  .card dt {
+    order: 2; /* equivalent to order-last */
+    font-size: 1.125rem; /* equivalent to text-lg */
+    font-weight: 500; /* equivalent to font-medium */
+    color: #6b7280; /* equivalent to text-gray-500 */
+  }
+  
+  .card dd {
+    font-size: 2.25rem; /* equivalent to text-4xl */
+    font-weight: 800; /* equivalent to font-extrabold */
+    color: black /* equivalent to text-blue-600 */
+  }
+  
+  @media (min-width: 768px) {
+    .card dd {
+      font-size: 3rem; /* equivalent to md:text-5xl */
+    }
+  }
+  
